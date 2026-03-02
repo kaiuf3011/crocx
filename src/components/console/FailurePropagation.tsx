@@ -15,7 +15,6 @@ const NODE_POSITIONS = [
 
 export default function FailurePropagation({ nodes }: Props) {
     const activeChain = nodes.filter(n => n.active);
-    const hasCritical = nodes.some(n => n.severity > 0.7);
 
     return (
         <div className="propagation-panel">

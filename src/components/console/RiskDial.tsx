@@ -1,4 +1,3 @@
-import React from 'react';
 import type { RiskState } from '../../hooks/useSimulatedTelemetry';
 
 interface Props {

@@ -274,10 +274,6 @@ function clamp(v: number, lo: number, hi: number) {
     return Math.max(lo, Math.min(hi, v));
 }
 
-function lerp(a: number, b: number, t: number) {
-    return a + (b - a) * t;
-}
-
 function sensorStatus(value: number, min: number, max: number, nominal: number): SensorReading['status'] {
     const deviation = Math.abs(value - nominal) / (max - min);
     if (deviation > 0.4) return 'critical';
